@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MMU-IMDB</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">	
+		<div class="container">
+	  		<div class="col-1">
+	  		</div>
+	  		<div class="col-2">
+			    <button type="button" id="add-button" class="btn btn-outline-light btn-sm">
+			    Add new
+			    <i class="bi bi-plus-square"></i>
+			    </button>
+		    </div>
+		    <div class="col-6">
+		 		<div class="row">
+			 		<div class="col-4">
+						<div class="form-group">
+							<select name="searchType" id="searchType" class="form-select form-select-sm required">
+								<option value="0" selected>Select Search Type</option>
+								<option value="1">All films</option>
+								<option value="2">Search by ID</option>
+								<option value="3">Search by name</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="form-group hide">
+							<input type="text" name="searchName" id="searchName" class="form-control form-control-sm" placeholder="Enter name" required>
+						</div>
+						<div class="form-group hide">
+							<input type="text" name="searchId" id="searchId" class="form-control form-control-sm" placeholder="Enter ID" required>
+						</div>
+					</div>
+		 			<div class="col-4">
+		 				<select class="form-select form-select-sm" id="dataType">
+							<option value="0" selected>Select Data Type</option>
+							<option value="1">JSON</option>
+							<option value="2">XML</option>
+							<option value="3">Text</option>
+						</select>
+		 			</div>
+	 			</div>
+		    </div>
+		    <div class="col-1">
+		    </div>
+		    <div class="col-1">
+		    	<button type="button" id="search-button" class="btn btn-outline-light btn-sm">
+			    Search
+			    <i class="bi bi-search"></i>
+			    </button>
+		    </div>
+		    <div class="col-1">
+		    </div>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="col-2">
+		</div>
+		<div class="col-8">
+			<div id="film-pagin-head">
+			</div>
+			<div id="film-table">
+			</div>
+			<div id="film-pagin-foot">
+			</div>
+		</div>
+		<div class="col-2">
+		</div>
+	</div>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery-Ajax.js"></script>
+	<script src="scripts/utils.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
